@@ -14,10 +14,10 @@ jobs:
           - os: ubuntu-latest
             python-version: "3.9"
             container: quay.io/pypa/manylinux2014_x86_64
-          - os: windows-latest
-            python-version: "3.11"
-          - os: macos-latest
-            python-version: "3.11"
+          # - os: windows-latest
+          #   python-version: "3.11"
+          # - os: macos-latest
+          #   python-version: "3.11"
 
     container: ${{ matrix.container || '' }}
 
