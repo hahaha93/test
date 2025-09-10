@@ -36,7 +36,7 @@ jobs:
 
       - name: Build executable
         run: |
-          pyinstaller --onefile simple_gui.py
+          pyinstaller --onefile --noconsole --noupx simple_gui.py
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
